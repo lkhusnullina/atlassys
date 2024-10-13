@@ -1,0 +1,155 @@
+$primary-color: #343C6A;
+$secondary-color: #8BA3CB;
+$background-color: #F5F7FA;
+
+.header {
+  padding: 0 40px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+
+  &__title {
+    margin-right: 502px;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    color: $primary-color;
+  }
+
+  &__search {
+    margin-right: 30px;
+    display: flex;
+    padding: 15px 25px;
+    min-width: 255px;
+    background-color: $background-color;
+    border-radius: 40px;
+    gap: 15px;
+
+    &--mobile {
+        display: none;
+    }
+
+    &-input {
+      width: 100%;
+      background: transparent;
+      border: none;
+
+      &::placeholder {
+        font-size: 15px;
+        line-height: 18px;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 35px;
+  }
+
+  &__icon {
+    padding: 12px 13px;
+    background: $background-color;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: $secondary-color;
+  }
+
+  &__avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+    .header { 
+        &__title {
+            margin-right: 150px;
+            font-size: 28px;
+            line-height: 34px;
+            color: $primary-color;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .header { 
+        &__title {
+            margin-right: 50px;
+            font-size: 28px;
+            line-height: 34px;
+            color: $primary-color;
+        }
+
+        &__icons {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header { 
+        padding: 21px 25px 0 25px;
+        height: 140px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        &__title {
+            margin-right: 100px;
+            margin-left: 100px;
+            font-size: 20px;
+            line-height: 24px;
+            color: $primary-color;
+        }
+        &__search {
+            display: none;
+            
+
+            &--mobile {
+                min-width: 325px;
+                display: flex;
+                padding: 12px 19px;
+                background-color: $background-color;
+                border-radius: 40px;
+                gap: 10px;
+            }
+
+            &-input--mobile {
+                width: 100%;
+                background: transparent;
+                border: none;
+
+                &::placeholder {
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: $secondary-color;
+                }
+            }
+        }
+        &__avatar {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+
+

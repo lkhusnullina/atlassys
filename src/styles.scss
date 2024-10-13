@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F5F7FA;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rightBlock {
+    max-width: 1190px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F7FA;
+}
+
+.leftBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+    .container {
+      padding: 20px;
+      flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+        flex-direction: column;
+    }
+    .sidebar {
+      &__burger {
+        display: block; // Показываем бургер на мобильных устройствах
+      }
+  
+      &__menu {
+        transform: translateX(-100%); // По умолчанию скрываем меню за экраном
+      }
+  
+      &__menu--open {
+        transform: translateX(0); // Открываем меню при клике на бургер
+      }
+    }
+  }
+  

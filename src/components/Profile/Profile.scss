@@ -1,0 +1,30 @@
+.profile {
+    margin: 31px 40px 0 40px;
+    padding: 0 30px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+
+.profile__main {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+}
+
+@media (max-width: 992px) {
+    .profile {
+        margin: 25px 25px 0 25px;
+        padding: 0 20px;
+        border-radius: 15px;
+    }
+
+    .profile__main {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+}
