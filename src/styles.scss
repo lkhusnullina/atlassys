@@ -46,15 +46,15 @@ body {
     }
     .sidebar {
       &__burger {
-        display: block; // Показываем бургер на мобильных устройствах
+        display: block; 
       }
   
       &__menu {
-        transform: translateX(-100%); // По умолчанию скрываем меню за экраном
+        transform: translateX(-100%); 
       }
   
       &__menu--open {
-        transform: translateX(0); // Открываем меню при клике на бургер
+        transform: translateX(0); 
       }
     }
   }
