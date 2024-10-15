@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/atlassys/static/css/main.7e242301.css",
+    "main.js": "/atlassys/static/js/main.e94b1783.js",
+    "static/js/453.b6e8ef81.chunk.js": "/atlassys/static/js/453.b6e8ef81.chunk.js",
+    "index.html": "/atlassys/index.html",
+    "main.7e242301.css.map": "/atlassys/static/css/main.7e242301.css.map",
+    "main.e94b1783.js.map": "/atlassys/static/js/main.e94b1783.js.map",
+    "453.b6e8ef81.chunk.js.map": "/atlassys/static/js/453.b6e8ef81.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e242301.css",
+    "static/js/main.e94b1783.js"
+  ]
+}
