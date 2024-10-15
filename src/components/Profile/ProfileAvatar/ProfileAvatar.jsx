@@ -9,7 +9,7 @@ const ProfileAvatar = () => {
         src="images/user-avatar.svg"
         alt="UserAvatar"
       />
-      <img className="profile__sctiker" src="/images/change-avatar.svg" alt="change-avatar" />
+      <img className="profile__sctiker" src="images/change-avatar.svg" alt="change-avatar" />
     </div>
   );
 };

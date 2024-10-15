@@ -14,11 +14,11 @@ const NavBar = () => {
   return (
     <>
     <button className="navbar__burger" onClick={toggleMenu}>
-        <img src='/images/burger-menu.svg' alt='burger-menu'/>
+        <img src='images/burger-menu.svg' alt='burger-menu'/>
     </button>
     <nav className={`navbar ${isMenuOpen ? 'navbar--open' : ''}`} >
       <div className="navbar__logo">
-        <img src="/images/logo.svg" alt="logo" />
+        <img src="images/logo.svg" alt="logo" />
       </div>
       <div className="navbar__menu">
         {menuAll.map((item) => (
